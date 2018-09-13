@@ -1,29 +1,3 @@
-const friendsArr = [
-  {
-    "name":"",
-    "photo":"",
-    "scores":[]
-  },
-  {
-    "name":"",
-    "photo":"",
-    "scores":[]
-  },
-  {
-    "name":"",
-    "photo":"",
-    "scores":[]
-  },
-  {
-    "name":"",
-    "photo":"",
-    "scores":[]
-  },
-  {
-    "name":"",
-    "photo":"",
-    "scores":[]
-  },
-];
+const friendsArr = [];
 
-module.exorts = friends;
+module.exorts = friendsArr;
