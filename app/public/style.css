@@ -1,0 +1,30 @@
+.container{
+    
+    height:500px;
+    background:rgb(209, 209, 209);
+    color:rgb(82, 79, 79);
+    font-family: 'Roboto Condensed', sans-serif;  
+}
+p{
+    font-size:60px;
+    margin:20px 40px 10px 33px;
+    padding-top:20px;
+}
+h1, h4{
+    text-indent:30px;
+}
+#survey{
+    cursor:pointer;
+    background:rgb(65, 99, 133);
+    width:150px;
+    color:rgb(184, 184, 184);
+    font-size:20px;
+    margin:30px;
+    padding:20px;
+    text-align:center;
+    border-radius: 15px;
+}
+#survey:hover{
+    background:#234;
+    color:white;
+}
