@@ -1,6 +1,6 @@
 .container{
-    
-    height:500px;
+    margin:0px 100px;
+    height:auto;
     background:rgb(209, 209, 209);
     color:rgb(82, 79, 79);
     font-family: 'Roboto Condensed', sans-serif;  
@@ -10,8 +10,11 @@ p{
     margin:20px 40px 10px 33px;
     padding-top:20px;
 }
-h1, h4{
+h1, h4, h5{
     text-indent:30px;
+}
+#compat{
+    margin-bottom:60px;
 }
 #survey{
     cursor:pointer;
@@ -19,7 +22,7 @@ h1, h4{
     width:150px;
     color:rgb(184, 184, 184);
     font-size:20px;
-    margin:30px;
+    margin-left:32px;
     padding:20px;
     text-align:center;
     border-radius: 15px;
@@ -27,4 +30,7 @@ h1, h4{
 #survey:hover{
     background:#234;
     color:white;
+}
+.radioBtns{
+    
 }

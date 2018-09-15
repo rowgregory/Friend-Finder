@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Group project</title>
+    <title>Friend Finder</title>
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
         crossorigin="anonymous">
@@ -15,28 +15,131 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Materilize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <!--Animate CSS-->
     <!-- <link rel="stylesheet" href="assets/css/animate.css"> -->
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+
+     <!-- Latest compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 </head>
 <body>
 
     
-        <div class="container">
-            
-            <p>Friend Finder</p>
-            <h4>Answer a few basic questions</h4>
-            <h4>Then find the friend with the greatest compatibility!</h4>
+    <div class="container">
+        <p>Survey Questions</p>
+        <h5>About You</h5>
+        <h5>Name (Required)</h5>
+        <h5>1 = strongly disagree | 5 = strongly agree</h5>
+        <form>
+            <div class="form-group">
+                <input id="name" type="text" class="form-control" placeholder="Name (Required)">
+            </div>
+            <div class="form-group">
+                    <input id="photo" type="text" class="form-control" placeholder="Link to Profile Photo (Required)">
+                </div>
 
-            <div id="survey">Go to Survey</div>
-        </div>
+                <h4>Do you like rollercoasters?</h4>
+                <select id="q1" class="chosen-select">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option> 
+                </select>
+                <h4>Horror movies are my favorite</h4>
+                <select id="q2" class="chosen-select">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option> 
+                </select>
+                <h4>I like to sing</h4>
+                <select id="q3" class="chosen-select">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option> 
+                </select>
+            
+                <h4>I don't do well with the opposite sex.</h4>
+                <select id="q4" class="chosen-select">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option> 
+                </select>
+                <h4>I go to the gym often</h4>
+                <select id="q5" class="chosen-select">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option> 
+                </select>
+                <h4>Cleaning is fun</h4>
+                <select id="q6" class="chosen-select">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option> 
+                </select>
+                <h4>Learning computer languages is difficult.</h4>
+                <select id="q7" class="chosen-select">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option> 
+                </select>
+            
+                <h4>I excel in social situations.</h4>
+                <select id="q8" class="chosen-select">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option> 
+                </select>
+                <h4>People think im confident.</h4>
+                <select id="q9" class="chosen-select">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option> 
+                </select>
+            
+                <h4>I let other people put me down easily.</h4>
+                <select id="q10" class="chosen-select">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option> 
+                </select>
+                <br>
+                <br>
+           
+            <button id="sbmtBtn" type="submit">Submit</button>
+        </form>
+    </div>
     
 
 

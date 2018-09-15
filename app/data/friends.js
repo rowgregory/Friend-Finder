@@ -1,3 +1,6 @@
-const friendsArr = [];
+module.export = {
+    friends: [
 
-module.exorts = friendsArr;
+    ]
+};
+
