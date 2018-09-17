@@ -1,6 +1,6 @@
 const path  = require('path');
 
-module.exports = (app) => {
+const routes = (app) => {
     
 
         // home page
@@ -15,4 +15,4 @@ module.exports = (app) => {
 
     
 }
-
+module.exports = routes;

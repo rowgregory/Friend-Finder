@@ -1,36 +1,69 @@
+body{
+    background: url(https://res.cloudinary.com/doyd0ewgk/image/upload/v1537152952/images/married.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin:0;
+    padding:0;
+}
+
 .container{
-    margin:0px 100px;
-    height:auto;
-    background:rgb(209, 209, 209);
-    color:rgb(82, 79, 79);
+    margin:0px auto;
+    height:auto; 
+    
+    background:rgb(0, 0, 0, 0.7);
+    color:rgb(228, 228, 228);
     font-family: 'Roboto Condensed', sans-serif;  
 }
 p{
-    font-size:60px;
+    font-size:40px;
     margin:20px 40px 10px 33px;
     padding-top:20px;
+    
 }
 h1, h4, h5{
-    text-indent:30px;
+    text-indent:35px;
+    font-size:9px;
 }
 #compat{
-    margin-bottom:60px;
+    margin-bottom:50px;
 }
-#survey{
+ #survey{
+
     cursor:pointer;
     background:rgb(65, 99, 133);
     width:150px;
     color:rgb(184, 184, 184);
     font-size:20px;
-    margin-left:32px;
-    padding:20px;
-    text-align:center;
+    margin-left:30px;
+    
+    
+    padding:5px;
+    
     border-radius: 15px;
-}
+} 
 #survey:hover{
     background:#234;
     color:white;
 }
-.radioBtns{
+
+select, .form-control, #sbmtBtn{
+    margin-left:6vw;
+    font-size: 8px;
+    border-radius:5px;
+    border: 2px solid #345;
+    cursor:pointer;
+
     
 }
+#sbmtBtn{
+margin-bottom: 2vw;
+border:none;
+background:rgb(54, 42, 56);
+color:white;
+border-radius:10px;
+padding:10px;
+
+}
+
