@@ -45,7 +45,7 @@ $('#sbmtBtn').on('click', (event) => {
         $.post(`${currentURL}/api/friends`, newFriend, (data) => {
             //log(data);
             
-            $('#title').text('This is your best match!');
+            $('.modal-title').text('This is your best match!');
             $('#matchName').text(data.name);
             $('#matchImg').attr('src', data.photo);
             

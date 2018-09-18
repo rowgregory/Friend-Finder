@@ -14,8 +14,7 @@ Bamazon is acompatibility-based "FriendFinder" application -- basically a dating
  
 ## Technologies Used
 
- * Node.js
- * JavaScript
+ 
  * express NPM Package (https://www.npmjs.com/package/express)
  * chalk NPM Package (https://www.npmjs.com/package/chalk)
  * path NPM Package (https://www.npmjs.com/package/path)
@@ -28,6 +27,8 @@ Bamazon is acompatibility-based "FriendFinder" application -- basically a dating
 ## Built With
 
  * CSS
+ * Node.js
+ * JavaScript
  
 
 ## Authors
