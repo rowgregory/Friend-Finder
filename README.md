@@ -1,10 +1,10 @@
+# Friend Finder
 
-<<<<<<< HEAD
-Friend Finder is a compatibility-based "FriendFinder" application -- basically a dating app. This full-stack site will take in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.
+ * Friend Finder is a compatibility-based "FriendFinder" application -- basically a dating app. This full-stack site will take in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.
 
 ## Getting Started
 
- https://friendfindergr.herokuapp.com/
+  * https://friendfindergr.herokuapp.com/
 
 
      
@@ -37,6 +37,4 @@ Friend Finder is a compatibility-based "FriendFinder" application -- basically a
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-=======
->>>>>>> c462d5af1406feb8b394c3e7185556e0d28ea617
+ * This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
