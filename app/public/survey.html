@@ -19,6 +19,12 @@
     <!-- <link rel="stylesheet" href="assets/css/animate.css"> -->
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+    <!-- Compiled and minified JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
      <!-- Latest compiled and minified CSS -->
      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css"> -->
 
@@ -41,15 +47,22 @@
                     <input id="photo" type="text" class="form-control" placeholder="Link to Profile Photo (Required)">
                 </div>
 
-                <h4>Do you like rollercoasters?</h4>
-                <select id="q1" class="chosen-select">
-                    <option value="" disabled selected>Choose your option</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option> 
-                </select>
+
+
+                <div class="row">
+                    <h5 class="number">Question #1</h5>
+                    <h6 class="question">You like rollercoasters.</h6>
+                    <div class="input-field col l6 s12 offset-l3">
+                        <select id="q1" class="chosen-select">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                            <option value="5">Option 5</option> 
+                        </select>
+                    </div>
+                </div>
                 <h4>Horror movies are my favorite</h4>
                 <select id="q2" class="chosen-select">
                     <option value="" disabled selected>Choose your option</option>
@@ -142,12 +155,14 @@
     </div>
 
     <!-- Modal -->
-    <div id="resultsModal" class="modal" role="dialog">
-        <div class="modal-content">
-            <h1 id="title"></h1>
-            <h2 id="matchName"></h2>
-            <img id="matchImg" src="" width = 300px>
-            
+    <div class="modal-content"></div>
+        <div id="resultsModal" class="modal" role="dialog">
+            <div class="modal-content">
+                <h1 id="title">This is your new friend!</h1>
+                <h2 id="matchName"></h2>
+                <img id="matchImg" src="" width = 300px>
+                
+            </div>
         </div>
     </div>
 
@@ -156,7 +171,8 @@
 
 
     <!--Anime.js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="logic.js"></script>
 </body>
 
