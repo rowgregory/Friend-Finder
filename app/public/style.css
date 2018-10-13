@@ -8,23 +8,96 @@ body{
     padding:0;
 }
 #name, #photo{
-    width: 50vw;
+    width: 400px;
 }
 
-.container{
+.jumbotron{
+    
+    background:url(images/china.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.welcome{
+    /* margin:30px auto; */
+    height:auto; 
+    /* padding-bottom:50px; */
+    background:rgba(0, 0, 0, 0.7);
+    color:white;
+    font-family: 'Roboto Condensed', sans-serif;  
+    /* border-radius:20px; */
+    
+    /* font-size: 45px; */
+
+}
+
+
+p{
+    font-size:50px;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+
+.friendFinder{
+    font-size:45px;
+}
+
+#dropdownMenu2{
+    color:yellow;
+}
+/* @-webkit-keyframes rollIn_2 {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+      transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes rollIn_2 {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+      transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .rollIn {
+    -webkit-animation-name: rollIn_2;
+    animation-name: rollIn_2;
+  } */
+
+/* .container{
     margin:30px auto;
     height:auto; 
     padding-bottom:50px;
     background:rgba(47, 63, 88);
     color:rgb(228, 228, 228);
     font-family: 'Roboto Condensed', sans-serif;  
-}
-p{
-    font-size: 4rem;
-    margin:20px 40px 10px 0px;
-    padding:20px;
+    border-radius:20px;
+} */
+
+
+/* .survey{
+    top:40px;
     
-}
+    background:orange;
+} */
+
+
+
 
 /*h1, h4, h5{
     text-indent:35px;
