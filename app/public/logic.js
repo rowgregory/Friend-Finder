@@ -1,7 +1,7 @@
 
 
 $('#sbmtBtn').on('click', (event) => {
-    $('#myModal').modal('show');
+    
 
     let log = console.log;
     log(`Are we here`);
@@ -25,6 +25,7 @@ $('#sbmtBtn').on('click', (event) => {
     }
 
     if (valididation() == true) {
+        $('#myModal').modal('show');
 
         let newFriend = {
             name: $('#name').val().trim(),
