@@ -2,22 +2,27 @@
 
  * Friend Finder is a compatibility-based "FriendFinder" application -- basically a dating app. This full-stack site will take in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.
 
-## Getting Started
+## Visit live in Heroku
 
-  * https://friendfindergr.herokuapp.com/
+  * [Friend Finder](https://friendfindergr.herokuapp.com/)
 
 
      
 ## Demo Videos
 
- * https://youtu.be/emX6omM72MY
+ * [Demonstration](https://youtu.be/Ref_fu8HHno)
+
+ * ![](public/images/Friend-Finder_gif.gif)
  
 ## Technologies Used
 
- 
+ * Node.js
+ * JavaScript
+ * jQuery
+ * Bootstrap
+ * HTML/CSS
  * express NPM Package (https://www.npmjs.com/package/express)
- * chalk NPM Package (https://www.npmjs.com/package/chalk)
- * path NPM Package (https://www.npmjs.com/package/path)
+ 
 
 ## Prerequisites
 
@@ -26,9 +31,7 @@
 
 ## Built With
 
- * CSS
- * Node.js
- * JavaScript
+ * Terminal/Gitbash
  
 
 ## Authors
