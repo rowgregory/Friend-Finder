@@ -1,5 +1,5 @@
 body{
-    background: url(https://res.cloudinary.com/doyd0ewgk/image/upload/v1537319325/Islands-of-clouds.jpg);
+    /* background: url(https://res.cloudinary.com/doyd0ewgk/image/upload/v1537319325/Islands-of-clouds.jpg); */
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
@@ -7,26 +7,26 @@ body{
     margin:0;
     padding:0;
 }
+#name, #photo{
+    width: 50vw;
+}
 
 .container{
     margin:30px auto;
     height:auto; 
     padding-bottom:50px;
-    background:rgb(0, 0, 0, 0.7);
+    background:rgba(47, 63, 88);
     color:rgb(228, 228, 228);
     font-family: 'Roboto Condensed', sans-serif;  
 }
 p{
     font-size: 4rem;
     margin:20px 40px 10px 0px;
-    padding:40px;
+    padding:20px;
     
 }
-i{
-    margin-right: 20px;
-    margin-top:20px;
-}
-h1, h4, h5{
+
+/*h1, h4, h5{
     text-indent:35px;
     font-size:20px;
 }
@@ -81,7 +81,7 @@ margin:30px;
 }
 
 .modal-content{
-    margin:auto 0;
-}
+    justify-content: center;
+} */
 
 
