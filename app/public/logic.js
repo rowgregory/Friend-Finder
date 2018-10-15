@@ -71,9 +71,9 @@ $('#sbmtBtn').on('click', (event) => {
 
 });
 
-$('#myModal').on('hidden.bs.modal', function() {
-    window.location.reload(true);
-    });
+// $('#myModal').on('hidden.bs.modal', function() {
+//     window.location.reload(true);
+//     });
 
 
 
