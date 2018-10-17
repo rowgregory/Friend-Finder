@@ -46,7 +46,7 @@ p{
 }
 
 .survey{
-    background: rgb(253, 247, 239);
+    background: rgb(207, 200, 189);
     padding:10px;
     border:solid 1px rgb(194, 194, 194);
 }
@@ -64,7 +64,7 @@ h4{
     border: 1px solid #88c;
     padding: 10px;
     border-radius: 5px;
-    margin: 10px;
+    margin: 10px 10px 10px 0;
     cursor: pointer;
 }
 #customfileupload
@@ -85,5 +85,7 @@ h4{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+
 
 

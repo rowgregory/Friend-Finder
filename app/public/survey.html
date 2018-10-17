@@ -12,14 +12,15 @@
         crossorigin="anonymous">
     <!-- Adding a google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
-    <!--CSS-->
-    <link rel="stylesheet" href="style.css">
+    
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- jQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
 
-
+    
+    
+   
 </head>
 
 <body>
@@ -47,119 +48,186 @@
     <div class="container">
         <div class="survey">
         <h1>Survey Questions</h1>
-        <form>
-            <div class="form-group">
-                <input id="name" type="text" class="form-control" placeholder="Name (Required)">
+
+        <form class="well form-horizontal" id="contact_form">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input id="name" type="text" class="form-control" placeholder="Name (Required)">
+                </div>
             </div>
-            <!-- <div class="form-group">
-                <input id="photo my_file" type="file" class="form-control" placeholder="Link to Profile Photo (Required)">
-            </div> -->
+        
+            
+            <div class="form-group">
+                <div class="col-md-7">
+                    <input type="button" id="get_file" value="Select file">
+                    <input type="file" id="my_file" class="form-control">
+                    <div id="customfileupload" >extension goes here</div>
+                </div>
+            </div>
 
+            <div class="form-group">
+                <div class="col-sm-8 col-md-6 col-xl-5">
+                    <div class="input-group">
+                        <h5>Rollercoasters are my favorite</h5>
+                        <select class="chosen-select" data-live-search="true" required>
+                            <option value="">Choose your option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
 
-            <input type="button" id="get_file" value="Grab file">
-            <input type="file" id="my_file" style="display: none">
-            <div id="customfileupload">Select a file</div>
+            <div class="form-group">
+                <div class="col-sm-8 col-md-5 col-xl-4">
+                    <div class="input-group">
+                        <h5>Clowns are fascinating</h5>
+                        <select name="state" class="chosen-select" data-live-search="true" required>
+                            <option value="">Choose your option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
 
-            <h5>Rollercoasters are your favorite.</h5>
-            <select id="q1" class="chosen-select">
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h5>Sleeping with your shirt off is a must.</h5>
-            <select id="q2" class="chosen-select">
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h5>I love to sing.</h5>
-            <select id="q3" class="chosen-select">
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
+            <div class="form-group">
+                <div class="col-xs-4 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="input-group">
+                        <h5>I love to sing.</h5>
+                        <select name="state" class="chosen-select" data-live-search="true" required>
+                            <option value="">Choose your option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>            
 
-            <h5>I don't do well with the opposite sex.</h5>
-            <select id="q4" class="chosen-select">
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h5>Going to the gym is a weekly routine.</h5>
-            <select id="q5" class="chosen-select">
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h5>Cleaning is fun.</h5>
-            <select id="q6" class="chosen-select">
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h5>I feel lonely in a room with a lot of people.</h5>
-            <select id="q7" class="chosen-select">
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
+            <div class="form-group">
+                <div class="col-xs-3 col-md-7 col-xl-5">
+                    <div class="input-group">
+                        <h5>I don't do well with the opposite sex.</h5>
+                        <select name="state" class="chosen-select" data-live-search="true" required>
+                            <option value="">Choose your option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+            </div> 
 
-            <h5>I excel in social situations.</h5>
-            <select id="q8" class="chosen-select">
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h5>People think im confident.</h5>
-            <select id="q9" class="chosen-select">
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
+            <div class="form-group">
+                <div class="col-md-7">
+                    <div class="input-group">
+                        <h5>Going to the gym is a weekly routine.</h5>
+                        <select name="state" class="chosen-select" data-live-search="true" required>
+                            <option value="">Choose your option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+            </div> 
 
-            <h5>I let other people put me down easily.</h5>
-            <select id="q10" class="chosen-select">
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
-
-            <button id="sbmtBtn" class="btn btn-secondary" type="submit">Submit</button>
+            <div class="form-group">
+                <div class="col-md-7">
+                    <div class="input-group">
+                        <h5>Cleaning is fun while eating cake.</h5>
+                        <select name="state" class="chosen-select" data-live-search="true" required>
+                            <option value="">Choose your option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+            </div> 
+            <div class="form-group">
+                <div class="col-md-8">
+                    <div class="input-group">
+                        <h5>I feel lonely in a room with a lot of people.</h5>
+                        <select name="state" class="chosen-select" data-live-search="true" required>
+                            <option value="">Choose your option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+            </div> 
+            <div class="form-group">
+                <div class="col-sm-8 col-md-5 col-xl-4">
+                    <div class="input-group">
+                        <h5>I excel in social situations.</h5>
+                        <select name="state" class="chosen-select" data-live-search="true" required>
+                            <option value="">Choose your option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+            </div> 
+            <div class="form-group">
+                <div class="col-sm-8 col-md-5 col-xl-4">
+                    <div class="input-group">
+                        <h5>People think im confident.</h5>
+                        <select name="state" class="chosen-select" data-live-search="true" required>
+                            <option value="">Choose your option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+            </div> 
+            <div class="form-group">
+                <div class="col-md-5">
+                    <div class="input-group">
+                        <h5>I let other people put me down easily.</h5>
+                        <select name="state" class="chosen-select" data-live-search="true" required>
+                            <option value="">Choose your option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-md-5">
+                <button id="sbmtBtn" class="btn btn-secondary" type="submit">Submit</button>
+            </div>
         </form>
+        </div>
     </div>
-    </div>
+   
+
 
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
@@ -186,13 +254,30 @@
         </div>
     </div>
 
-
+    
     <!-- Bootstrap Js -->
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
 
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
+    
     <!-- Local Js -->
     <script src="logic.js"></script>
+
 </body>
 
 </html>
