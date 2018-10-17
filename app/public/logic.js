@@ -1,5 +1,3 @@
-
-
 $('#sbmtBtn').on('click', (event) => {
     
 
@@ -54,21 +52,13 @@ $('#sbmtBtn').on('click', (event) => {
             $('#matchName').text(data.name);
             $('#matchImg').attr('src', data.photo);
             $("#myModal").modal('toggle');
-            
-
         })
         
-
-
     } else {
         alert(`Please fill all entries`);
     };
 
-
     return false;
-
-    
-
 });
 
 $('#myModal').on('click', function() {
