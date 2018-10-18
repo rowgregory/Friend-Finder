@@ -48,6 +48,7 @@ $('#sbmtBtn').on('click', (event) => {
             $('#matchName').text(data.name);
             $('#matchImg').attr('src', data.photo);
             $("#myModal").modal('toggle');
+           
         })
         
     } else {
