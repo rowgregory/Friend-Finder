@@ -18,7 +18,7 @@ app.use(bPar.json({ type: 'application/vnd.api+json' }));
 require('./app/routing/htmlRoutes.js')(app);
 require('./app/routing/apiRoutes.js')(app);
 
-app.use(express.static('app/public'))
+app.use(express.static("public"))
 
 
 app.listen(PORT, () => {log(`App listening on PORT: ${PORT}`);})

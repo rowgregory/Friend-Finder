@@ -12,7 +12,7 @@
 
  * [Demonstration](https://youtu.be/Ref_fu8HHno)
 
- * ![](/images/Friend-Finder.gif?raw=true)
+ * ![](public/images/Friend-Finder.gif?raw=true)
  
 ## Technologies Used
 
